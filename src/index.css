@@ -1,0 +1,222 @@
+@import "tailwindcss";
+@import "@fontsource/anton";
+@import "@fontsource/inter-tight/400.css";
+@import "@fontsource/inter-tight/500.css";
+@import "@fontsource/inter-tight/600.css";
+@import "@fontsource/inter-tight/700.css";
+
+@theme {
+  --font-anton: "Anton", sans-serif;
+  --font-sans: "Inter Tight", sans-serif;
+  
+  --color-accent: var(--accent);
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-foreground: var(--text);
+}
+
+/* Default Dark Theme (Green Accent) */
+:root {
+  --accent: #D4F06D;
+  --bg: #121212;
+  --card: #1C1C1C;
+  --text: #ffffff;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --muted: rgba(255, 255, 255, 0.4);
+  --semi: rgba(255, 255, 255, 0.6);
+  --nav-bg: rgba(10, 10, 10, 0.95);
+}
+
+/* Light Theme (Green Accent) */
+.light {
+  --accent: #7ca600;
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --text: #121212;
+  --border-color: rgba(0, 0, 0, 0.15);
+  --muted: rgba(0, 0, 0, 0.6);
+  --semi: rgba(0, 0, 0, 0.8);
+  --nav-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* Ocean Theme (Blue/Cyan) */
+.theme-ocean {
+  --accent: #00D9FF;
+  --bg: #0a1929;
+  --card: #132f4c;
+  --text: #e0f7ff;
+  --border-color: rgba(0, 217, 255, 0.2);
+  --muted: rgba(224, 247, 255, 0.5);
+  --semi: rgba(224, 247, 255, 0.7);
+  --nav-bg: rgba(10, 25, 41, 0.95);
+}
+
+.light.theme-ocean {
+  --accent: #0099cc;
+  --bg: #e6f7ff;
+  --card: #ffffff;
+  --text: #0a1929;
+  --border-color: rgba(0, 153, 204, 0.2);
+  --muted: rgba(10, 25, 41, 0.6);
+  --semi: rgba(10, 25, 41, 0.8);
+  --nav-bg: rgba(230, 247, 255, 0.9);
+}
+
+/* Sunset Theme (Orange/Pink) */
+.theme-sunset {
+  --accent: #FF6B6B;
+  --bg: #1a0f1f;
+  --card: #2d1b36;
+  --text: #ffe6e6;
+  --border-color: rgba(255, 107, 107, 0.2);
+  --muted: rgba(255, 230, 230, 0.5);
+  --semi: rgba(255, 230, 230, 0.7);
+  --nav-bg: rgba(26, 15, 31, 0.95);
+}
+
+.light.theme-sunset {
+  --accent: #ff4757;
+  --bg: #fff0f0;
+  --card: #ffffff;
+  --text: #1a0f1f;
+  --border-color: rgba(255, 71, 87, 0.2);
+  --muted: rgba(26, 15, 31, 0.6);
+  --semi: rgba(26, 15, 31, 0.8);
+  --nav-bg: rgba(255, 240, 240, 0.9);
+}
+
+/* Forest Theme (Emerald Green) */
+.theme-forest {
+  --accent: #10B981;
+  --bg: #0f1f17;
+  --card: #1a2e25;
+  --text: #d1fae5;
+  --border-color: rgba(16, 185, 129, 0.2);
+  --muted: rgba(209, 250, 229, 0.5);
+  --semi: rgba(209, 250, 229, 0.7);
+  --nav-bg: rgba(15, 31, 23, 0.95);
+}
+
+.light.theme-forest {
+  --accent: #059669;
+  --bg: #ecfdf5;
+  --card: #ffffff;
+  --text: #0f1f17;
+  --border-color: rgba(5, 150, 105, 0.2);
+  --muted: rgba(15, 31, 23, 0.6);
+  --semi: rgba(15, 31, 23, 0.8);
+  --nav-bg: rgba(236, 253, 245, 0.9);
+}
+
+/* Purple Dream Theme */
+.theme-purple {
+  --accent: #A855F7;
+  --bg: #1a0f2e;
+  --card: #2d1b4e;
+  --text: #f3e8ff;
+  --border-color: rgba(168, 85, 247, 0.2);
+  --muted: rgba(243, 232, 255, 0.5);
+  --semi: rgba(243, 232, 255, 0.7);
+  --nav-bg: rgba(26, 15, 46, 0.95);
+}
+
+.light.theme-purple {
+  --accent: #9333ea;
+  --bg: #faf5ff;
+  --card: #ffffff;
+  --text: #1a0f2e;
+  --border-color: rgba(147, 51, 234, 0.2);
+  --muted: rgba(26, 15, 46, 0.6);
+  --semi: rgba(26, 15, 46, 0.8);
+  --nav-bg: rgba(250, 245, 255, 0.9);
+}
+
+/* Golden Hour Theme */
+.theme-golden {
+  --accent: #F59E0B;
+  --bg: #1c1510;
+  --card: #2d2218;
+  --text: #fef3c7;
+  --border-color: rgba(245, 158, 11, 0.2);
+  --muted: rgba(254, 243, 199, 0.5);
+  --semi: rgba(254, 243, 199, 0.7);
+  --nav-bg: rgba(28, 21, 16, 0.95);
+}
+
+.light.theme-golden {
+  --accent: #d97706;
+  --bg: #fffbeb;
+  --card: #ffffff;
+  --text: #1c1510;
+  --border-color: rgba(217, 119, 6, 0.2);
+  --muted: rgba(28, 21, 16, 0.6);
+  --semi: rgba(28, 21, 16, 0.8);
+  --nav-bg: rgba(255, 251, 235, 0.9);
+}
+
+@layer base {
+  ::placeholder {
+    @apply text-[var(--muted)];
+  }
+  
+  body {
+    @apply bg-bg text-foreground font-sans antialiased transition-colors duration-500;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-anton uppercase tracking-tight;
+  }
+}
+
+.btn-outline {
+  @apply px-6 py-2 rounded-full border border-[var(--border-color)] hover:border-accent hover:text-accent transition-all duration-300 uppercase text-xs font-bold tracking-widest text-foreground;
+}
+
+.btn-primary {
+  @apply px-8 py-3 rounded-full bg-accent text-black font-bold hover:bg-foreground hover:text-bg transition-all duration-300 uppercase text-sm tracking-widest;
+}
+
+.accordion-item {
+  @apply border-b border-[var(--border-color)] py-6 cursor-pointer;
+}
+
+.glass-card {
+  @apply bg-card/80 border border-[var(--border-color)] rounded-3xl p-8 hover:border-accent/40 transition-all duration-300;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stat-card {
+  @apply bg-accent text-black p-8 rounded-3xl shadow-2xl;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--text) 0%, var(--semi) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  @apply relative text-xs font-bold uppercase tracking-widest text-[var(--muted)] hover:text-accent transition-colors duration-300;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.selection\:bg-accent::selection {
+  background-color: var(--accent);
+  color: #000;
+}
+
+/* Smooth theme transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}

@@ -7,3 +7,4 @@ coverage/
 .env*
 !.env.example
 GOOGLE_SEARCH_CONSOLE_GUIDE.md
+MANUAL_DEPLOYMENT.md
